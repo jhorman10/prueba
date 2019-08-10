@@ -14,15 +14,20 @@ export class HomePage {
 
   // Aqui cree el evento que dispara el popover
   async mostrarPop( evento) {
+
     // crear variable controladora del evento
     const POPOVER = await this.PopCTRL.create({
+
       // componente a mostrar dentro del pop
       component: PopoverComponent,
+
       // event es para que reconozca el boton que se clickeo
       event: evento,
+
       // forma en la que se va a visualizar
       mode: 'ios'
     });
+    
     // espera promesa para mostrar el pop
     await POPOVER.present();
   }

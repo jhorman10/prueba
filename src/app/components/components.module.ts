@@ -16,7 +16,7 @@ import { IonicModule } from '@ionic/angular';
   ],
   imports: [
     CommonModule,
-    // importo el ionicmodule para utilizar los componente de ionic en la carpeta components
+    // importo el ionicmodule para utilizar los componentes de ionic en la carpeta components
     IonicModule
   ]
 })
